@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Android.mk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nv_apk_file.c" />
+    <ClCompile Include="nv_file.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nv_apk_file.h" />
+    <ClInclude Include="nv_file.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C6DCEE89-DE82-406D-A1C4-FA2E87C450F0}</ProjectGuid>
+    <RootNamespace>nv_file</RootNamespace>
+    <ProjectName>nv_file</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <AndroidStlType>gnustl_static</AndroidStlType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <AndroidStlType>gnustl_static</AndroidStlType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Android'">
+    <AndroidStlType>gnustl_static</AndroidStlType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Platform)'=='Android'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>..\nv_obj\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

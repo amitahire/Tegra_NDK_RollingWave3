@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AndroidManifest.xml" />
+    <None Include="assets\ball.frag" />
+    <None Include="assets\ball.vert" />
+    <None Include="assets\Barren Reds.jpg" />
+    <None Include="assets\courier+lucida_256.abc" />
+    <None Include="assets\courier+lucida_256.dds" />
+    <None Include="assets\Debug.frag" />
+    <None Include="assets\Debug.vert" />
+    <None Include="assets\font.frag" />
+    <None Include="assets\font.vert" />
+    <None Include="assets\heightMap.frag" />
+    <None Include="assets\heightMap.vert" />
+    <None Include="assets\KPAX-Fin2.raw" />
+    <None Include="assets\light.frag" />
+    <None Include="assets\light.vert" />
+    <None Include="assets\mainball.frag" />
+    <None Include="assets\mainball.vert" />
+    <None Include="assets\quad.frag" />
+    <None Include="assets\quad.vert" />
+    <None Include="assets\quit_screen.dds" />
+    <None Include="assets\sceneNode.frag" />
+    <None Include="assets\sceneNode.vert" />
+    <None Include="assets\side4.png" />
+    <None Include="assets\simple.frag" />
+    <None Include="assets\simple.vert" />
+    <None Include="assets\simpleTEX.frag" />
+    <None Include="assets\simpleTEX.vert" />
+    <None Include="assets\test1.dds" />
+    <None Include="assets\test2.dds" />
+    <None Include="assets\test3.dds" />
+    <None Include="assets\utahcond+bold_1024.abc" />
+    <None Include="assets\utahcond+bold_1024.dds" />
+    <None Include="assets\zappy_android.dds" />
+    <None Include="build.xml" />
+    <None Include="jni\Android.mk" />
+    <None Include="jni\Application.mk" />
+    <None Include="project.properties" />
+    <None Include="proguard.cfg" />
+    <None Include="res\values\strings.xml" />
+    <JCompile Include="src\com\test\rollingwave\RollingWave3.java">
+      <FileType>Document</FileType>
+    </JCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Team Project\Team Project\Games\GameClass.cpp" />
+    <ClCompile Include="..\Team Project\Team Project\Games\GameEntity.cpp" />
+    <ClCompile Include="..\Team Project\Team Project\Games\MyGame.cpp" />
+    <ClCompile Include="..\Team Project\Team Project\Physics\PhysicsNode.cpp" />
+    <ClCompile Include="..\Team Project\Team Project\Physics\PhysicsSystem.cpp" />
+    <ClCompile Include="..\Team Project\Team Project\Renderer\SceneNode.cpp" />
+    <ClCompile Include="jni\engine.cpp" />
+    <ClCompile Include="jni\HeightMap.cpp" />
+    <ClCompile Include="jni\main.cpp" />
+    <ClCompile Include="jni\RollingWave3.c" />
+    <ClCompile Include="jni\triangle.cpp" />
+    <ClCompile Include="MainBall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Team Project\Team Project\Games\GameClass.h" />
+    <ClInclude Include="..\Team Project\Team Project\Games\GameEntity.h" />
+    <ClInclude Include="..\Team Project\Team Project\Games\GameEntityEnum.h" />
+    <ClInclude Include="..\Team Project\Team Project\Games\MyGame.h" />
+    <ClInclude Include="..\Team Project\Team Project\Physics\Collision.h" />
+    <ClInclude Include="..\Team Project\Team Project\Physics\CollisionPairs.h" />
+    <ClInclude Include="..\Team Project\Team Project\Physics\PhysicsNode.h" />
+    <ClInclude Include="..\Team Project\Team Project\Physics\PhysicsSystem.h" />
+    <ClInclude Include="..\Team Project\Team Project\Renderer\SceneNode.h" />
+    <ClInclude Include="jni\engine.h" />
+    <ClInclude Include="jni\HeightMap.h" />
+    <ClInclude Include="jni\triangle.h" />
+    <ClInclude Include="MainBall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="libs\jni\nclgl-Android\nclgl-Android.vcxproj">
+      <Project>{75b08dc2-97c6-4c69-b53d-10213005a711}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FD0B13DD-598D-4B5F-9AB8-91F4F803BEBE}</ProjectGuid>
+    <RootNamespace>RollingWave3</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Android'">
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <IncludePath>libs\jni;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <IncludePath>libs\jni;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;_ANDROID</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\nclgl;libs/jni;$(SolutionDir)\Team Project\Team Project</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>libs/jni/nv_obj/$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>-landroid;-lnv_and_util;-lnv_bitfont;-lnv_egl_util;-lnv_file;-lnv_glesutil;-lnv_hhdds;-lnv_log;-lnv_shader;-lnv_thread;-lstdc++;-lc;-lm;-llog;-ldl;-lGLESv2;-lEGL;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;_ANDROID</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\nclgl;libs/jni;$(SolutionDir)\Team Project\Team Project</AdditionalIncludeDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>-landroid;-lnv_and_util;-lnv_bitfont;-lnv_egl_util;-lnv_file;-lnv_glesutil;-lnv_hhdds;-lnv_log;-lnv_shader;-lnv_thread;-lstdc++;-lc;-lm;-llog;-ldl;-lGLESv2;-lEGL;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>libs/jni/nv_obj/$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\nclgl;libs/jni;$(SolutionDir)\Team Project\Team Project</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>-landroid;-lnv_and_util;-lnv_bitfont;-lnv_egl_util;-lnv_file;-lnv_glesutil;-lnv_hhdds;-lnv_log;-lnv_shader;-lnv_thread;-lstdc++;-lc;-lm;-llog;-ldl;-lGLESv2;-lEGL;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

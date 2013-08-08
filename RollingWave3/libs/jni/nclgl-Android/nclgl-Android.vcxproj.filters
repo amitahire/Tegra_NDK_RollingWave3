@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="res">
+      <UniqueIdentifier>eac17078-0bb6-425d-80d0-df00ce7a7f3d</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\values">
+      <UniqueIdentifier>5d7023c6-64e5-472f-bc83-a9657726b27b</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{02c5237b-abc5-42fb-a4fc-16e9949236c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\com">
+      <UniqueIdentifier>{d9c0be68-7243-4a0a-901f-c11347cce737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\com\nclgl">
+      <UniqueIdentifier>{06dfbc6c-1c42-40db-969b-f093d90d674b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\com\nclgl\android">
+      <UniqueIdentifier>{ef12e4bc-3c9c-46e2-b887-de595a22d327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Header">
+      <UniqueIdentifier>{14028895-9c39-4603-8e29-adbb26bd2d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Source">
+      <UniqueIdentifier>{6dc142b3-9dfc-4c63-93ea-0a6e2a39aea2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AndroidManifest.xml" />
+    <None Include="build.xml" />
+    <None Include="project.properties" />
+    <None Include="proguard.cfg" />
+    <None Include="res\values\strings.xml">
+      <Filter>res\values</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <JCompile Include="src\com\nclgl\android\nclglAndroid.java">
+      <Filter>src\com\nclgl\android</Filter>
+    </JCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\nclgl\Camera.cpp">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\nclgl\Matrix4.cpp">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\nclgl\Mesh.cpp">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\nclgl\Plane.cpp">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\nclgl\Quaternion.cpp">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshData.cpp">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\nclgl\Camera.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\nclgl\Common.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\nclgl\Light.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\nclgl\Matrix4.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\nclgl\Mesh.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\nclgl\Vector2.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\nclgl\Vector3.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\nclgl\Vector4.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\nclgl\Quaternion.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\nclgl\Plane.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshData.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\nclgl\ICO.h">
+      <Filter>src\Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

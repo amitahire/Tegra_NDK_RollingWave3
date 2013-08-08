@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="res">
+      <UniqueIdentifier>9033af08-fc3c-4001-9ef6-aa27cc303dac</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\values">
+      <UniqueIdentifier>57add2f0-67ae-4c57-995d-2f6fd0865978</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jni">
+      <UniqueIdentifier>{ce422a40-2289-47fe-ae77-1a50df6573b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{ae534338-ea00-4696-9a95-1373d05e91ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\com">
+      <UniqueIdentifier>{a63e8f96-6652-4de0-a348-b63485116d27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\com\test">
+      <UniqueIdentifier>{65f17e77-1f83-4eaf-b494-18220eb9df82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\com\test\rollingwave">
+      <UniqueIdentifier>{da9eb792-4a60-473e-a4d1-a8644430e373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asset">
+      <UniqueIdentifier>{7d706b03-41a9-4140-a007-53c90a8fb164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jni\HeightMap">
+      <UniqueIdentifier>{dbe84bfa-f21f-433e-9bf4-c1ebb8a1f23f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jni\Engine">
+      <UniqueIdentifier>{09492f30-b180-40f7-a926-ec1351deb4e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jni\Physics">
+      <UniqueIdentifier>{e002b71e-a03c-4233-a72f-596184450c54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jni\Game">
+      <UniqueIdentifier>{e77e9a8c-a610-4d36-b45e-8b85cf4292a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AndroidManifest.xml" />
+    <None Include="build.xml" />
+    <None Include="project.properties" />
+    <None Include="proguard.cfg" />
+    <None Include="res\values\strings.xml">
+      <Filter>res\values</Filter>
+    </None>
+    <None Include="jni\Android.mk">
+      <Filter>jni</Filter>
+    </None>
+    <None Include="jni\Application.mk">
+      <Filter>jni</Filter>
+    </None>
+    <None Include="assets\Barren Reds.jpg">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\courier+lucida_256.abc">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\courier+lucida_256.dds">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\font.frag">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\font.vert">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\heightMap.frag">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\heightMap.vert">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\KPAX-Fin2.raw">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\quit_screen.dds">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\sceneNode.frag">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\sceneNode.vert">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\side4.png">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\simple.frag">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\simple.vert">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\simpleTEX.frag">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\simpleTEX.vert">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\test1.dds">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\test2.dds">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\test3.dds">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\utahcond+bold_1024.abc">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\utahcond+bold_1024.dds">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\zappy_android.dds">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\Debug.frag">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\Debug.vert">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\light.frag">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\light.vert">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\mainball.frag">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\mainball.vert">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\quad.frag">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\quad.vert">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\ball.frag">
+      <Filter>asset</Filter>
+    </None>
+    <None Include="assets\ball.vert">
+      <Filter>asset</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="jni\RollingWave3.c">
+      <Filter>jni</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\HeightMap.cpp">
+      <Filter>jni\HeightMap</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\engine.cpp">
+      <Filter>jni\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\main.cpp">
+      <Filter>jni\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\triangle.cpp">
+      <Filter>jni\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Team Project\Team Project\Physics\PhysicsNode.cpp">
+      <Filter>jni\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Team Project\Team Project\Physics\PhysicsSystem.cpp">
+      <Filter>jni\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Team Project\Team Project\Games\GameClass.cpp">
+      <Filter>jni\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Team Project\Team Project\Games\GameEntity.cpp">
+      <Filter>jni\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Team Project\Team Project\Games\MyGame.cpp">
+      <Filter>jni\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Team Project\Team Project\Renderer\SceneNode.cpp">
+      <Filter>jni</Filter>
+    </ClCompile>
+    <ClCompile Include="MainBall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <JCompile Include="src\com\test\rollingwave\RollingWave3.java">
+      <Filter>src\com\test\rollingwave</Filter>
+    </JCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jni\HeightMap.h">
+      <Filter>jni\HeightMap</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\engine.h">
+      <Filter>jni\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\triangle.h">
+      <Filter>jni\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Team Project\Team Project\Physics\Collision.h">
+      <Filter>jni\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Team Project\Team Project\Physics\CollisionPairs.h">
+      <Filter>jni\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Team Project\Team Project\Physics\PhysicsNode.h">
+      <Filter>jni\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Team Project\Team Project\Physics\PhysicsSystem.h">
+      <Filter>jni\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Team Project\Team Project\Games\GameClass.h">
+      <Filter>jni\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Team Project\Team Project\Games\GameEntity.h">
+      <Filter>jni\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Team Project\Team Project\Games\GameEntityEnum.h">
+      <Filter>jni\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Team Project\Team Project\Games\MyGame.h">
+      <Filter>jni\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Team Project\Team Project\Renderer\SceneNode.h">
+      <Filter>jni</Filter>
+    </ClInclude>
+    <ClInclude Include="MainBall.h" />
+  </ItemGroup>
+</Project>

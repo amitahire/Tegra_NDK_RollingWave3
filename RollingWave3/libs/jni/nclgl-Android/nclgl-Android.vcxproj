@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AndroidManifest.xml" />
+    <None Include="build.xml" />
+    <None Include="project.properties" />
+    <None Include="proguard.cfg" />
+    <None Include="res\values\strings.xml" />
+    <JCompile Include="src\com\nclgl\android\nclglAndroid.java">
+      <FileType>Document</FileType>
+    </JCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\nclgl\Camera.cpp" />
+    <ClCompile Include="..\..\..\..\nclgl\Matrix4.cpp" />
+    <ClCompile Include="..\..\..\..\nclgl\Mesh.cpp" />
+    <ClCompile Include="..\..\..\..\nclgl\Plane.cpp" />
+    <ClCompile Include="..\..\..\..\nclgl\Quaternion.cpp" />
+    <ClCompile Include="MeshData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\nclgl\Camera.h" />
+    <ClInclude Include="..\..\..\..\nclgl\Common.h" />
+    <ClInclude Include="..\..\..\..\nclgl\ICO.h" />
+    <ClInclude Include="..\..\..\..\nclgl\Light.h" />
+    <ClInclude Include="..\..\..\..\nclgl\Matrix4.h" />
+    <ClInclude Include="..\..\..\..\nclgl\Mesh.h" />
+    <ClInclude Include="..\..\..\..\nclgl\Plane.h" />
+    <ClInclude Include="..\..\..\..\nclgl\Quaternion.h" />
+    <ClInclude Include="..\..\..\..\nclgl\Vector2.h" />
+    <ClInclude Include="..\..\..\..\nclgl\Vector3.h" />
+    <ClInclude Include="..\..\..\..\nclgl\Vector4.h" />
+    <ClInclude Include="MeshData.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{75B08DC2-97C6-4C69-B53D-10213005A711}</ProjectGuid>
+    <RootNamespace>nclgl_Android</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Android'">
+    <AndroidTargetAPI>android-11</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>..\nv_obj\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <OutDir>..\nv_obj\$(Configuration)\</OutDir>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Android'">
+    <OutDir>..\nv_obj\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;_ANDROID</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;_ANDROID</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>$(ProjectDir)\</AntBuildPath>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

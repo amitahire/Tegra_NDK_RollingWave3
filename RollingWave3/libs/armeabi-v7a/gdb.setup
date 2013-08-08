@@ -1,0 +1,6 @@
+# GENERATED FILE
+set solib-search-path D:/Android-NDK-All  Stuff/15 MARCH - ANDROID/14 March - Work on this Copy/RollingWave3/libs/armeabi-v7a;C:/NVPACK/android-ndk-r8/platforms/android-14/arch-arm/usr/lib
+directory "D:/Android-NDK-All  Stuff/15 MARCH - ANDROID/14 March - Work on this Copy/Team Project/Team Project/Games" "D:/Android-NDK-All  Stuff/15 MARCH - ANDROID/14 March - Work on this Copy/Team Project/Team Project/Physics" "D:/Android-NDK-All  Stuff/15 MARCH - ANDROID/14 March - Work on this Copy/Team Project/Team Project/Renderer" "D:/Android-NDK-All  Stuff/15 MARCH - ANDROID/14 March - Work on this Copy/RollingWave3/jni" "D:/Android-NDK-All  Stuff/15 MARCH - ANDROID/14 March - Work on this Copy/RollingWave3" "C:/NVPACK/android-ndk-r8/sources/cxx-stl/system" "C:/NVPACK/android-ndk-r8/platforms/android-14/arch-arm/usr/include"
+set can-use-hw-watchpoints 1
+# BEGIN USER COMMANDS
+# END USER COMMANDS
